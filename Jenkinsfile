@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 
 // Load helm shared library
-@Library("github.com/camptocamp/jenkins-lib-helm")
+@Library("github.com/candranapits/jenkins-lib-helm")
 def helm = new com.camptocamp.Helm()
 
 podTemplate(name: 'geomapfish-builder', label: 'geomapfish', cloud: 'openshift', containers: [
